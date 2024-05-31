@@ -1,0 +1,11 @@
+.card-container{
+  display: flex;
+  width: 100%;
+  justify-content:center ;
+  flex-wrap: nowrap;
+}
+.card{
+  background-color: #ccc;
+  border: 1px solid #666;
+  border-radius: 4px;
+}
