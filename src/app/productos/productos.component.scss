@@ -3,3 +3,29 @@
   display: flex;
   font-size: 3vw;
 }
+.card-container{
+  display: flex;
+  width: 50vw;
+  justify-content:center ;
+  flex-wrap: nowrap;
+}
+.card{
+  background-color: #ccc;
+  border: 1px solid #666;
+  border-radius: 4px;
+}
+.nombreProducto{
+  font-size: 3vw;
+  justify-content: center;
+  display: flex;
+}
+.precioProducto{
+  font-size: 2vw;
+  justify-content: center;
+  display: flex;
+}
+.descripcionProducto{
+  font-size: larger;
+  justify-content: center;
+  display: flex;
+}
