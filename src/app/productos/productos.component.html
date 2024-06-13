@@ -1,9 +1,4 @@
 <div class="titulo"><p>PRODUCTOS</p></div>
-<div class="card-container">
-  <div class="card">
-    <img src="https://png.pngtree.com/png-clipart/20200613/ourmid/pngtree-gamebox-5-desigh-with-controller-png-image_2256159.jpg" alt="">
-    <p class="nombreProducto">PlayStation 5</p>
-    <p class="precioProducto">$500.000</p>
-    <p class="descripcionProducto">Oferta solo por hoy, 50% off en efectivo</p>
-  </div>
+<div class="container-card">
+  <app-card *ngFor="let producto of productos" [producto]="producto"/>
 </div>

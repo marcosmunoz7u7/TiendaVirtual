@@ -1,14 +1,23 @@
-export interface Products{
+export interface Productos{
   id: number,
-  name: string,
-  money: ProductsPrices,
-  category: number,
+  title: string,
+  price: number,
+  category: Category,
   description?: string,
-  price: number
+  image: string,
+  rating: Rating,
+
 }
 
-export interface ProductsPrices{
-  cost: number,
-  tax: number,
-  price: number
+export enum Category{
+  Electronics = "electronics",
+  Jewelery= "jewelery",
+  MenSCloting= "men's cloting",
+  WomenSCloting= "women's cloting",
 }
+
+export interface Rating{
+  rate: number,
+  count: number,
+}
+
