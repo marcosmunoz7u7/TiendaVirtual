@@ -1,4 +1,22 @@
 <div class="titulo"><p>PRODUCTOS</p></div>
+<label for="searchBox"></label>
+<input type="text" [(ngModel)]="searchData" (keyup)="getFileteredProducts()" id="">
+  
+    <!-- <app-card [producto]="data" *ngIf="searchData==''" class="max"></app-card>
+
+    <app-card [producto]="filteredData" *ngIf="searchData!=''" class="max"></app-card> -->
+    @if(searchData !=''){
+      @for ( producto of filteredData; track $index) {
+         <app-card [producto]="producto" />
+        }
+    }
+    @if(searchData ==''){
+      @for ( producto of filteredData; track $index) {
+        <app-card [producto]="producto" />
+       }
+    }
+
+
 <div class="container-card">
   <app-card *ngFor="let producto of productos" [producto]="producto"/>
 </div>

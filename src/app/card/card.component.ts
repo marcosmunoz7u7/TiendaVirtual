@@ -3,7 +3,6 @@ import { Router, RouterOutlet } from '@angular/router';
 import { Productos } from '../interfaces/producto';
 import { CommonModule, CurrencyPipe, SlicePipe } from '@angular/common';
 import { DetalleProductoComponent } from '../detalle-producto/detalle-producto.component';
-import { ProductosService } from '../productos.service';
 
 @Component({
   selector: 'app-card',
