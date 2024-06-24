@@ -17,7 +17,6 @@ export class ProductosComponent implements OnInit{
   productos: Productos[] = [];
   filteredData!: Productos[]| null;
   searchData:string ='';
-  data!: Productos[];
   loader:boolean =false
   ngOnInit(): void {
     this.productosSvc.getAllProductos().subscribe((res:Productos[])=>{
@@ -26,7 +25,7 @@ export class ProductosComponent implements OnInit{
 
   }
   getFileteredProducts(){
-    this.filteredData = this.data.filter((productos: Productos)=>{
+    this.filteredData = this.productos.filter((productos: Productos)=>{
 
       return productos.title.includes(this.searchData)
 
