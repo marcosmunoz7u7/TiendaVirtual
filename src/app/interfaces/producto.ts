@@ -20,4 +20,7 @@ export interface Rating{
   rate: number,
   count: number,
 }
+export interface ProducsArray{
+  results: Productos[];
+}
 

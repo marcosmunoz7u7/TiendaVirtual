@@ -2,11 +2,10 @@
 <div class="card">
   <img src="{{producto?.image}}" alt="">
   <div class="card-content">
-    <p class="nombreProducto">{{producto?.title}}</p>
+    <b><p class="nombreProducto">{{producto?.title}}</p></b>
     <p class="descripcionProducto">{{producto?.description?.slice(0, 100)}}</p>
     <p class="precioProducto">{{producto?.price | currency}}</p>
     <button class="boton" (click)="verMas(producto?.id)">Ver más</button>
   </div>
 </div>
-<br><br><br><br>
 
